@@ -1,0 +1,16 @@
+<table border="1">
+<tr>
+  <th>ISBNコード</th><th>書名</th><th>価格</th>
+  <th>出版社</th><th>刊行日</th>
+</tr>
+[%- FOREACH item = list -%]
+  <tr>
+    <td>[% item.isbn | html %]</td>
+    <td>[% item.title | html  %]</td>
+    <td>[% item.price | html %]円</td>
+    <td>[% item.publish | html %]</td>
+    <td>[% item.published | html %]
+    [%# item.published.strftime('%Y 年 %m 月 %d 日') %]</td>
+  </tr>
+[%- END -%]
+</table>

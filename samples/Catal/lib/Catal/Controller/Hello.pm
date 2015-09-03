@@ -1,9 +1,8 @@
 package Catal::Controller::Hello;
-use Moose;
-use namespace::autoclean;
-use utf8;
 
-BEGIN { extends 'Catalyst::Controller'; }
+use strict;
+use warnings;
+use parent 'Catalyst::Controller';
 
 =head1 NAME
 
@@ -30,20 +29,19 @@ sub index :Path :Args(0) {
 
 sub intro :Local {
   my ( $self, $c ) = @_;
-  $c->response->body('HELLO!hoge');
+  $c->response->body('こんにちは、世界！');
 }
 
 sub introView :Local {
   my ( $self, $c ) = @_;
-  $c->stash->{msg} = 'あいうえお!';
-  warn $c->stash->{msg};
+  $c->stash->{msg} = 'こんにちは、世界！';
 }
 
 sub list :Local {
-  my ( $self, $c ) = @_;
+  my ($self, $c) = @_;
   $c->stash->{list} = [$c->model('CatalDB::Book')->all];
+  # $c->model('CatalDB')->storage->debug(1);
 }
-=encoding utf8
 
 =head1 AUTHOR
 
@@ -55,7 +53,5 @@ This library is free software. You can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =cut
-
-__PACKAGE__->meta->make_immutable;
 
 1;

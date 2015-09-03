@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<name>Catalyst入門</name>
+	<view name="TT">
+		<WRAPPER>master.tt</WRAPPER>
+	</view>
+	<plugin name="PageCache">
+		<expires>30</expires>
+		<set_http_headers>1</set_http_headers>
+		<auto_cache>/hello2/.*</auto_cache>
+		<auto_cache>/Resultset/.*</auto_cache>
+		<debug>1</debug>
+	</plugin>
+	<model name="CatalDB">
+		<debug>1</debug>
+		<schema_class>Catal::Schema</schema_class>
+		<traits>Caching</traits>
+		<connect_info>
+			<dsn>dbi:mysql:cataldb</dsn>
+			<user>cataluser</user>
+			<password>catalpass</password>
+			<on_connect_do>SET NAMES utf8</on_connect_do>
+			<AutoCommit>1</AutoCommit>
+		</connect_info>
+	</model>
+</config>

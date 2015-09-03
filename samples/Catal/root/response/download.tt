@@ -1,0 +1,3 @@
+[%- FOREACH item = list -%]
+[% item.isbn | html %],[% item.title | html %],[% item.price %],[% item.publish | html %],[% item.published %]
+[% END -%]

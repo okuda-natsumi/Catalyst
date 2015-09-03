@@ -1,0 +1,14 @@
+{
+	'Model::CatalDB' => {
+    debug => 1,
+    schema_class => 'Catal::Schema',
+    traits => ['Caching'],
+    connect_info => {
+        dsn => 'dbi:mysql:cataldb',
+        user => 'cataluser',
+        password => 'catalpass',
+        on_connect_do => 'SET NAMES utf8',
+        AutoCommit =>1,
+    },
+	}
+}

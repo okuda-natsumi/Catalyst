@@ -1,0 +1,4 @@
+[% INCLUDE 'header.tt' title = 'INCLUDE命令' %]
+本文です。
+[% INCLUDE 'footer.tt' %]
+[%# INCLUDE 'footer1.tt' + 'footer2.tt' %]

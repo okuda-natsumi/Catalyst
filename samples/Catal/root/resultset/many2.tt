@@ -1,0 +1,12 @@
+[% FOREACH book = list %]
+  [% INCLUDE details2.tt %]
+  <hr />
+  <dl>
+  [% FOREACH item = book %]
+    <dt>[% item.usr.unam | html %]さん</dt>
+    <dd>[% item.body | html %]</dd>
+    <dd>[% item.updated | html %]</dd>
+  [% END %]
+  </dl>
+[% END %]
+

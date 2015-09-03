@@ -1,0 +1,4 @@
+[% FILTER html_para -%]
+Catalystは、Perl言語で書かれたアプリケーションフレームワークです。
+Template Toolkitは、Catalystで利用できる代表的なテンプレートエンジンです。
+[%- END %]

@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>入力値エラー</title>
+</head>
+<body>
+<h3>以下のエラーが発生しました。</h3>
+[% FOREACH item = errors %]
+  <li>[% item %]</li>
+[% END %]
+</ul>
+</body>
+</html>

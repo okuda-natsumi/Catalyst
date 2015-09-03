@@ -1,0 +1,4 @@
+[% 'lowerです。' | upper %] <br />
+[% 'UPPERです。' | lower %] <br />
+[% 'lowerです。' | ucfirst %] <br />
+[% 'UPPERです。' | lcfirst %]

@@ -1,0 +1,12 @@
+<dl>
+[% FOREACH item = list -%]
+  <dt>[% item.title | html %]（[% item.publish | html %]）</dt>
+  <dd>
+    [% IF item.book_review.size > 0 %]
+      [% item.book_review.0.body | html %]<br />
+      （[% item.book_review.0.uid | html %]）
+      [% item.book_review.0.updated | html %]
+    [%- END -%]
+  </dd>
+[%- END %]
+</dl>

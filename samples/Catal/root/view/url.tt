@@ -1,0 +1,6 @@
+[%- USE url('contents/book', debug = 'release') -%]
+
+[% url %] <br />
+[% url(isbn = '978-4-7741-4076-6', category = 'Perl') %] <br />
+[% url(publish = 'インプレス') %] <br />
+[% url(debug = 'debug') %]

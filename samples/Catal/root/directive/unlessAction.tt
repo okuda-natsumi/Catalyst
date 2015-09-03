@@ -1,0 +1,4 @@
+[%# uid = 'yyamada' -%]
+[%- UNLESS uid.defined -%]
+  <a href="/login">ログイン</a>
+[%- END -%]

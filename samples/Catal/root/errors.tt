@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>カスタムエラーページ</title>
+</head>
+<body>
+以下のエラーが発生しました。<br />
+<a href="mailto:xxxx@xx.xx">システム管理者</a>に連絡するか、時間をおいてから再度アクセスしてください。
+<ul>
+[%- FOREACH item = errors %]
+  <li>[% item | html %]</li>
+[% END -%]
+</ul>
+</body>
+</html>

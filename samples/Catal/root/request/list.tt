@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>クエリ情報</title>
+</head>
+<body>
+<ul>
+[% FOREACH item = list %]
+  <li>
+    <a href="/request/detail?isbn=[% item.isbn | url %]">
+    <!--<a href="/request/detail/[% item.isbn | url %]">-->
+      [% item.title | html  %]（[% item.publish | html  %]）</a>
+  </li>
+[% END %]
+</ul>
+</body>
+</html>

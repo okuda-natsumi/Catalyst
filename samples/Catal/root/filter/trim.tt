@@ -1,0 +1,6 @@
+[%- msg = '   This   is
+      a    pen.      ' -%]
+<pre>
+[% msg | trim %]
+[% msg | collapse %]
+</pre>

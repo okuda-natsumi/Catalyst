@@ -1,0 +1,22 @@
+<table border="0">
+  <tr>
+    <th align="right">ISBNコード：</th>
+    <td>[% book.isbn | html %]</td>
+  </tr>
+  <tr>
+    <th align="right">書名：</th>
+    <td>[% book.title | html %]</td>
+  </tr>
+  <tr>
+    <th align="right">価格：</th>
+    <td>[% book.price | html %]円</td>
+  </tr>
+  <tr>
+    <th align="right">出版社：</th>
+    <td>[% book.publish | html %]</td>
+  </tr>
+  <tr>
+    <th align="right">発刊日：</th>
+    <td>[% book.published %]</td>
+  </tr>
+</table>

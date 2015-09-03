@@ -1,0 +1,6 @@
+[%- mytime = '2012/12/04 10:05:58' -%]
+[%- USE d = date(format = '%Y年 %m月 %d日 %H:%M:%S', locale = 'ja_JP') -%]
+現在時刻：[% d.format %]<br />
+指定時刻：[% d.format(mytime) %]<br />
+指定形式：[% d.format(format = ' %H時 %M分 %S秒 ') %]<br />
+指定時刻および形式：[% d.format(mytime, ' %H時 %M分 %S秒 ') %]

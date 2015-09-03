@@ -1,0 +1,5 @@
+<ul>
+[% FOREACH item = list %]
+  <li>[% item.publish %]</li>
+[% END %]
+</ul>

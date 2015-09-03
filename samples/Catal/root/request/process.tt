@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>ポストデータ</title>
+</head>
+<body>
+こんにちは、[% nam | html %]さん！
+</body>
+</html>

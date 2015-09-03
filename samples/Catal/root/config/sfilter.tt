@@ -1,0 +1,2 @@
+[%- email = 'CQW15204@nifty.com' -%]
+[% email | mailto %]

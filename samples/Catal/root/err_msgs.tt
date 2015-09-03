@@ -1,0 +1,7 @@
+[%- IF error.has_error %] 
+  <ul>
+  [%- FOREACH msg IN error.messages(c.action.reverse) %]
+    <li>[% msg | utf8 %] </li>
+  [%- END %]
+  </ul>
+[%- END %]

@@ -1,0 +1,3 @@
+[% WRAPPER master.tt title = 'WRAPPER命令' %]
+  本文です。
+[% END %]

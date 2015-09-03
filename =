@@ -1,0 +1,7 @@
+install is up to date. (0.01)
+--> Working on MooseX::NonMoose
+Fetching http://www.cpan.org/authors/id/D/DO/DOY/MooseX-NonMoose-0.26.tar.gz ... OK
+Configuring MooseX-NonMoose-0.26 ... OK
+Building and testing MooseX-NonMoose-0.26 ... OK
+Successfully installed MooseX-NonMoose-0.26
+1 distribution installed

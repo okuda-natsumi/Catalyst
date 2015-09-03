@@ -1,0 +1,3 @@
+[%- rate = 4 -%]
+[% '★' | repeat(rate) -%]
+[% '☆' | repeat(5 - rate) %]

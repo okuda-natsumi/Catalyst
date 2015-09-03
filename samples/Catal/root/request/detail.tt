@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>クエリ情報</title>
+</head>
+<body>
+<ul>
+  <li>ISBNコード：[% book.isbn | html  %]</li>
+  <li>書名：[% book.title | html  %]</li>
+  <li>価格：[% book.price %]円</li>
+  <li>出版社：[% book.publish | html %]</li>
+  <li>刊行日：[% book.published %]</li>
+</ul>
+</body>
+</html>

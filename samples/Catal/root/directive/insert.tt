@@ -1,0 +1,5 @@
+<div style="border:ridge 10px #00FFFF">
+<pre>
+  [% INSERT directive/foreachAction.tt | html %]
+</pre>
+</div>

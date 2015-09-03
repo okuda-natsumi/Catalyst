@@ -1,0 +1,2 @@
+[% FILTER html %] I'm "HETARE & BOKE" person. <br> [% END %] <br />
+[% FILTER xml  %] I'm "HETARE & BOKE" person. <br> [% END %]

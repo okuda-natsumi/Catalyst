@@ -1,0 +1,118 @@
+<pre>
+[% keywd = 'Perl' %]
+[% IF keywd.defined %]キーワード：[% keywd %][% END %]
+
+[% keywd.length %]
+
+[% keywd.repeat(2) %]
+
+[% msg = 'サポートサイトは、http://www.wings.msn.to/です。' %]
+[% msg.replace('(http(s)?://([\w\-]+\.)+[\w\-]+(/[\w\- ./?%&=]*)?)', '<a href="$1">$1</a>') %]
+
+[% greeting = '<p>こんにちは、Catalyst！</p>'; %]
+[% greeting.remove('</.+?>').remove('<.+?>') %]
+
+
+[% m = msg.match('(http(s)?://([\w\-]+\.)+[\w\-]+(/[\w\- ./?%&=]*)?)') %]
+[% m.0 %]
+
+[% line = 'Perl,PHP,Python,Ruby,JavaScript' %]
+[% line.split(',').join('...') %]
+
+[% num = 123456789 %]
+[% num.chunk(-3).join(',') %]
+
+[% num.substr(3, 4) %]
+[% num.substr(3, 4, 'ABCD') %]
+
+[% a = keywd.list %]
+[% a.0 %]
+
+[% h = keywd.hash %]
+[% h.value %]
+
+[% keywd.size %]
+
+[% langs = ['Perl', 'PHP', 'Python'] %]
+[% langs.first %]
+
+[% langs.last %]
+
+[% langs.size %]
+
+[% langs.max %]
+
+[% langs.defined(4) ? '○' : '×' %]
+
+[% langs.reverse.join(',') %]
+
+[% langs.join('|') %]
+
+[% langs.grep('.*P$').join(',') %]
+
+[% fruits = ['Orange', 'Apple', 'Melon', 'Strawberry'] %]
+[% fruits.sort.0 %]
+
+[% nums = [20, -90, 5, 108] %]
+[% nums.nsort.join('｜') %]
+
+[% langs.unshift('JavaScript') %]
+[% langs.join('｜') %]
+
+[% langs.push('PHP', 'Visual Basic') %]
+[% langs.join('｜') %]
+
+[% langs.shift %]
+[% langs.join('｜') %]
+
+[% langs.pop %]
+[% langs.join('｜') %]
+
+[% langs.unique.join('｜') %]
+
+[% langs2 = ['Java', 'C++'] %]
+[% langs.import(langs2).join('｜') %]
+[% langs.join('｜') %]
+
+[% langs3 = ['C', 'F#'] %]
+[% langs.merge(langs3).join('｜') %]
+[% langs.join('｜') %]
+
+[% langs.slice(3, 5).join('｜') %]
+
+[% langs.splice(1, 2).join('｜') %]
+[% langs.join('｜') %]
+
+[% prices = ['apple', 150, 'orange', 50] %]
+[% h = prices.hash %]
+[% h.apple %]
+
+[% members = {'Yamada' => 55, 'Hio' => 75, 'Kakeya' => 35 } %]
+[% members.keys.join('｜') %]
+
+[% members.values.join('｜') %]
+
+[% members.items.join('｜') %]
+
+[% FOREACH item IN members.pairs %]
+	- [% item.key %]：[% item.value %]
+[% END %]
+
+[% add = {'Yamada' => 'Chiba', 'Hio' => 'Tochigi', 'Kakeya' => 'Hiroshima' } %]
+[% add.sort.join('｜') %]
+
+[% members.nsort.join('｜') %]
+
+[% members2 = {'Yamada' => 25, 'Hanada' => 30 } %]
+[% members.import(members2) %]
+[% members.Hanada %]
+
+[% members.defined('Hio') ? '○' : '×' %]
+
+[% members.delete('Kakeya') %]
+[% members.keys.join('｜') %]
+
+[% members.size %]
+
+[% members.item('Hanada') %]
+</pre>

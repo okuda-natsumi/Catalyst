@@ -1,0 +1,14 @@
+
+[%-
+  path  = 'view/sample?keywd=wings&category=it'
+  name  = 'サーバサイド技術の学び舎'
+-%]
+<a href="/view/uri?path=[% path | uri %]&name=[% name | uri %]">詳細</a>
+
+<!--
+[%-
+  path = '/view/uri?category=perl&keywd=サーバサイド技術の学び舎'
+-%]
+<a href="[% path | uri %][% # path | url %]">詳細</a>
+-->
+

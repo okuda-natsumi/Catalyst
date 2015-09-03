@@ -1,0 +1,8 @@
+[%#- PROCESS macro.tt -%]
+[%- USE d = date(format = c.localize('format')) -%]
+[% c.localize('morning') %]<br />
+[% c.localize('now', d.format) -%]<br />
+
+[%#- USE d = date(format = l('format')) -%]
+[%# l('morning') %]<br />
+[%# l('now', d.format) %]<br />

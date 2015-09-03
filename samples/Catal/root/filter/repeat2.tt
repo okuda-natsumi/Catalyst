@@ -1,0 +1,7 @@
+[%- rate = 4- %]
+[%- FILTER repeat(rate) %]
+<img src="star_fill.png" width="20" height="20" alt="" />
+[%- END %]
+[%- FILTER repeat(5 - rate) %]
+<img src="star_blank.png" width="20" height="20" alt="" />
+[% END -%]

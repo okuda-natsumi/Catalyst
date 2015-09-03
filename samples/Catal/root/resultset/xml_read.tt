@@ -1,0 +1,2 @@
+<h2>[% doc.name | utf8 | html %]</h2>
+<pre>[% doc.content | utf8 | html %]</pre>

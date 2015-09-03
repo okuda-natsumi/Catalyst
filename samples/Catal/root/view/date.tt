@@ -1,0 +1,6 @@
+[%- calc = d.calc -%]
+[%- IF calc.leap_year(d.format(format = '%Y')) -%]
+	今年はうるう年です。
+[%- ELSE -%]
+	今年はうるう年ではありません。
+[%- END -%]

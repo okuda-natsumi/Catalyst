@@ -1,0 +1,9 @@
+<form method="POST">
+件名：<br />
+<input type="text" name="title" size="60" maxlength="50"
+	value="[% item.title %]" /><br />
+本文：<br />
+<textarea name="body" cols="50" rows="15">[% item.body %]</textarea><br />
+最終更新日：[% item.updated.strftime('%Y/%m/%d %H:%M:%S') %]<br />
+<input type="submit" value="保存" />
+</form>

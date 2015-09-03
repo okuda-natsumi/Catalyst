@@ -1,0 +1,11 @@
+[%- 
+  t_src = 'http://www.wings.msn.to/image/wings.jpg'
+  t_alt = '"WINGSプロジェクト"<ロゴ>'
+  t_width = 215
+  t_height = 67
+-%]
+[%- USE HTML(sorted = 1) -%]
+[% HTML.element(img =>
+  { src => t_src, alt => t_alt, width => t_width, height => t_height }) -%]
+
+<!--<img [% HTML.attributes(src => t_src, alt => t_alt, width => t_width, height => t_height ) -%]>-->

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>モデルの基本</title>
+</head>
+<body>
+<table corder="1">
+<tr>
+  <th>ISBNコード</th>
+  <th>書名</th>
+  <th>価格</th>
+  <th>出版社</th>
+  <th>刊行日</th>
+</tr>
+[% FOREACH item = list %]
+  <tr>
+    <th>[% item.isbn | html %]</th>
+    <th>[% item.title | html %]</th>
+    <th>[% item.price | html %]</th>
+    <th>[% item.publish | html %]</th>
+    <th>[% item.published | html %]</th>
+  </tr>
+[% END %]
+</table>
+</body>
+</html>

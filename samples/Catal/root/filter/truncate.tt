@@ -1,0 +1,3 @@
+[% FILTER truncate(24, '…') -%]
+Catalystは、Perl言語で書かれたアプリケーションフレームワークです。
+[%- END %]
