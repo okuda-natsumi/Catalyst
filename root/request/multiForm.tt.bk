@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>post data</title>
+</head>
+<body>
+<form method="POST" action"/request/multiProcess">
+what do you like fream work?
+<input type="checkbox" name="fw" value="Catalyst"  />Catalyst
+<input type="checkbox" name="fw" value="Rails"  />Rails
+<input type="checkbox" name="fw" value="ASP"  />ASP
+<input type="checkbox" name="fw" value="Zend"  />Zend
+<input type="checkbox" name="fw" value="Struts"  />Struts
+<input type="submit" value="enter"  />
+</form>
+</body>
+</html>

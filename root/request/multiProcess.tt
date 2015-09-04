@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>ポストデータ</title>
+</head>
+<body>
+あなたが選択したのは、[% fw | html %]です。
+<!--あなたが選択したのは、
+[% FOREACH item = fw %]
+  [% item | html %],
+[% END %]
+です。-->
+</body>
+</html>

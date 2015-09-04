@@ -1,17 +1,16 @@
 package Catal::Model::CatalDB;
-
 use strict;
 use base 'Catalyst::Model::DBIC::Schema';
 
 __PACKAGE__->config(
     schema_class => 'Catal::Schema',
-    
     connect_info => {
         dsn => 'dbi:mysql:cataldb',
         user => 'cataluser',
         password => 'catalpass',
         AutoCommit => q{1},
-        on_connect_do => ["SET NAMES utf8"],
+        mysql_enable_utf8 => 1,
+        #on_connect_do => ["SET NAMES utf8"],
     }
 );
 

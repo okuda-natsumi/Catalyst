@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>post data</title>
+</head>
+<body>
+hello! [% nam | html %]
+</body>
+</html>
+

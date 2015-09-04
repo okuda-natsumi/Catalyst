@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>post data</title>
+</head>
+<body>
+<form method="POST" action="/request/process">
+  name:
+  <input type="text" name="nam" size="10" maxlength="255"  />
+  <input type="submit" value="send"  />
+</form>
+</body>
+</html>
